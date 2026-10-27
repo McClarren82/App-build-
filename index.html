@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paycheck Planner</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Paycheck Planner</h1>
+      <p class="sub">Bi-weekly, zero-based: every dollar of each paycheck gets a job.</p>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-view="dashboard" aria-selected="true">Dashboard</button>
+      <button role="tab" data-view="setup" aria-selected="false">Budget setup</button>
+      <button role="tab" data-view="year" aria-selected="false">Year ahead</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+
+  <script src="src/budget.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
